@@ -3,13 +3,27 @@
 <style>
 canvas {
 background: #232323;
+position: absolute;
+z-index: -200;
 }
 
-div.a {
-  padding-top: 205px;
-  text-align: center;
+.container {
+ width: 100%;
+	height: 70vh;
+	display: flex;
+  flex-direction:column;
+	align-items: center;
+	justify-content: center;
+  font-size: 3vh;
+  font-family:sans-serif;
+ }
+ 
+.container h1 {
+  background-image: linear-gradient(43deg, #fc8803 46%, #e66a05 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .2s;
 }
-
 body {
   background: #1d1e22;
 }
@@ -17,6 +31,10 @@ body {
 </head>
 <body>
 <canvas id="canvas"></canvas>
+<div class="container">
+  <h1>technyk</h1> 
+  <p>"No brain, just pain."</p>
+</div>
 <script>
 
 var canvas = document.getElementById("canvas"),
