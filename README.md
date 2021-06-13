@@ -1,4 +1,3 @@
 # hello tady technyk
-minecraft kostièky jsou superhello
-
+minecraft
 # pepega
