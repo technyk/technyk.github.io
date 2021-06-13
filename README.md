@@ -1,2 +1,2 @@
 # hello tady technyk
-minecraft kostièky jsou super
+minecraft kostièky jsou superhello
