@@ -1,1 +1,2 @@
-# technyk.github.io
+# hello tady technyk
+minecraft kostièky jsou super
