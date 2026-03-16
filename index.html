@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Kontrola délky směny</title>
 </head>
 <body>
-    
+    <section>
+        <h1>Kontrola délky směny</h1>
+        <div class="main-control">
+            <div class="main-input">
+                <span>Začátek</span>
+                <div class="input-time">
+                    <input type="number" name="starth" id="starth"><span>:</span>
+                    <input type="number" name="startm" id="startm">
+                </div>
+            </div>
+            <div class="main-input">
+                <span>Konec</span>
+                <div class="input-time">
+                    <input type="number" name="endh" id="endh"><span>:</span>
+                    <input type="number" name="endm" id="endm">
+                </div>
+            </div>
+            <div class="main-buttons">
+                <!-- <button id="compute">Nastavit</button> -->
+            </div>
+            
+        </div>
+        <hr>
+        <div class="stats">
+            <div class="stat">
+                <div class="abovetext">
+                    <span id="progress-text-percentage">Odpracováno 0% směny</span>
+                    <span id="progress-text-time">Zbývá jen 0h 0m</span>
+                </div>
+                <div class="outerbar">
+                    <div class="innerbar" id="progress">
+                    </div>
+                </div>
+            </div>
+            <div class="stat stat-row">
+                <span id="progress-worked-hours">Za tuto směnu máš již odpracováno <div class="highlight">0h 0m</div>!</span>
+                <span>💼</span>
+            </div>
+            <div class="stat stat-row">
+                <span id="progress-total-time">Tato směna má celkově trvat <div class="highlight">0h 0m</div></span>
+                <span>⏰</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Made by <a href="https://github.com/technyk">technyk</a></span>
+    </footer>
 </body>
 </html>

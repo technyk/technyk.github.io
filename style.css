@@ -1,0 +1,146 @@
+/* General */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1C1C1C;
+    color: #CCC;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+span {
+    display: block;
+}
+
+a,.highlight {
+    color: #8100D1;
+}
+
+.highlight {
+    display: inline;
+}
+
+/* Main Input Fields */
+.main-control {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    font-size: 1.5rem;
+}
+
+.main-control button {
+    appearance: none;
+    border: none;
+    background-color: #8100D1;
+    font-size: 1.5rem;
+    padding: 15px 3rem;
+    border-radius: 8px;
+    transition: background-color 0.075s;
+}
+
+.main-control button:hover{
+    background-color: #b366e3;
+}
+
+.main-buttons {
+    margin-top: 0.4rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto;
+}
+
+.main-control button#reset {
+    padding: 15px 1.5rem;
+}
+
+svg {
+    color:black;
+    width: 1.5rem;
+}
+
+.input-time input {
+    font-size: 3rem;
+    width: 8rem;
+    background-color: #CCC;
+    border-radius: 8px;
+}
+
+/* Stats */
+hr {
+    margin: 32px 0;
+}
+
+.stats {
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stat {
+    background-color: #161616;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.stat-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outerbar {
+    border: 2px #CCC solid;
+    height: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.innerbar {
+    border-radius: 0px;
+    height: 100%;
+    width: 0%;
+    background-color: #8100D1;
+    transition: all 0.5s;
+}
+
+.abovetext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem;
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+footer span {
+    text-align: center;
+}
