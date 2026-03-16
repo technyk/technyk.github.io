@@ -58,9 +58,9 @@ function compute() {
     const worked_hours = Math.floor((nowtotal - start) / 60);
     const worked_minutes = (nowtotal - start) % 60;
     if (worked_hours < 1) {
-        document.getElementById("progress-worked-hours").innerHTML = `Za tuto směnu máš již odpracováno <div class="highlight">${worked_minutes}m</div>!`;
+        document.getElementById("progress-worked-hours").innerHTML = `Již máš odpracováno <div class="highlight">${worked_minutes}m</div>!`;
     }else {
-        document.getElementById("progress-worked-hours").innerHTML = `Za tuto směnu máš již odpracováno <div class="highlight">${worked_hours}h ${worked_minutes}m</div>!`;
+        document.getElementById("progress-worked-hours").innerHTML = `Již máš odpracováno <div class="highlight">${worked_hours}h ${worked_minutes}m</div>!`;
     }
 
     const total_hours = Math.floor(diff / 60);
