@@ -20,6 +20,9 @@ function compute() {
     const start = starth * 60 + startm;
     const end = endh * 60 + endm;
     const diff = end - start;
+    if(document.getElementById("kfc").checked){
+        diff += 30;
+    }
 
     const length_hours = Math.floor(diff / 60);
     const length_minutes = diff % 60;
