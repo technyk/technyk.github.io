@@ -19,7 +19,7 @@ function compute() {
     // vypocet celkoveho casu smeny
     const start = starth * 60 + startm;
     const end = endh * 60 + endm;
-    const diff = end - start;
+    var diff = end - start;
     if(document.getElementById("kfc").checked){
         diff += 30;
     }
